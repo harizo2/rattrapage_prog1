@@ -1,16 +1,13 @@
 import NombreUn from "./exo2.js";
+import { Echanger } from "./exo2.js";
 
 function triLignes(matrice){
     let indexTemp = 0;
     for (let i = 1; i < matrice.length; i++) {
         let valueTemp = 0;
         if(NombreUn(matrice[i]) < NombreUn(matrice[indexTemp])){
-            valueTemp = matrice[indexTemp];
-            matrice[indexTemp] = matrice[i];
-            matrice[i] = valueTemp;
+            Echanger(matrice, indexTemp, i);
         }
-        console.log(matrice);
-        
         indexTemp++;
     }
     return matrice;

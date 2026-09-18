@@ -1,10 +1,11 @@
-function Echanger(tab, element1, element2){
+export function Echanger(tab, element1, element2){
     let temp = tab[element2];
     tab[element2] = tab[element1];
     tab[element1] = tab[temp];
     return tab;
 }
 console.log(Echanger([0, 1, 0], 1,2));
+
 
 function Ranger(tab){
     let indexTemp = 0;
