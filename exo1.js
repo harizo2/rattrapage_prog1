@@ -1,8 +1,15 @@
 function ranger(tab){
-    const result = [];
-    for(let element of tab){
-         if(element >= 0){ result.push(element);}else result.unshift(element); 
+    let indexTemp = 0;
+    for (let i = 1; i < tab.length; i++) {
+        let valTemp = 0;
+        if(tab[i] <= tab[indexTemp]){ 
+            valTemp = tab[indexTemp];
+            tab[indexTemp] = tab[i];
+            tab[i] = valTemp;
+            indexTemp++;
+        }
     }
-    return result;
+    return tab;
 }
-console.log(ranger([-5, -3, 2, 4, 0]  ));
+console.log(ranger([3, -1, 0, 4, -2, 5, -3]  ));
+
