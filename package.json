@@ -1,0 +1,19 @@
+{
+  "name": "rattrapage_prog1",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harizo2/rattrapage_prog1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/harizo2/rattrapage_prog1/issues"
+  },
+  "homepage": "https://github.com/harizo2/rattrapage_prog1#readme"
+}
